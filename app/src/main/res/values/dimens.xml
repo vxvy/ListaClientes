@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_rv_title">32sp</dimen>
+    <dimen name="dim_rv_client_name">24sp</dimen>
+    <dimen name="dim_rv_client_others">16sp</dimen>
+    <dimen name="dim_rv_cardview_margin">12dp</dimen>
+    <dimen name="dim_rv_padding">8dp</dimen>
+    <dimen name="dim_rv_lower_padding">4dp</dimen>
+    <dimen name="std_elevation">4dp</dimen>
+
+</resources>

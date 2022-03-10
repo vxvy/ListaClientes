@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dim_rv_cardview_margin"
+    android:elevation="@dimen/std_elevation"
+    android:padding="@dimen/dim_rv_padding"
+    app:cardBackgroundColor="@color/md_theme_light_primaryContainer"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_rv_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txv_name"
+            android:padding="@dimen/dim_rv_lower_padding"
+            android:text="@string/txv_name"
+            android:textColor="@color/md_theme_light_onPrimaryContainer"
+            android:textSize="@dimen/dim_rv_client_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_phone"
+            android:layout_gravity="end"
+            android:inputType="phone"
+            android:padding="@dimen/dim_rv_lower_padding"
+            android:text="@string/txv_phone"
+            android:textColor="@color/md_theme_light_onPrimaryContainer"
+            android:textSize="@dimen/dim_rv_client_others" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_email"
+            android:layout_gravity="end"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/dim_rv_lower_padding"
+            android:text="@string/txv_email"
+            android:textColor="@color/md_theme_light_onPrimaryContainer"
+            android:textSize="@dimen/dim_rv_client_others" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:padding="@dimen/dim_rv_lower_padding"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dim_rv_lower_padding"
+                android:text="@string/txv_visited"
+                android:textAlignment="textEnd"
+                android:textColor="@color/md_theme_light_onPrimaryContainer"
+
+                android:textSize="@dimen/dim_rv_client_others" />
+
+            <ImageView
+                android:id="@+id/iv_visited"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:foregroundGravity="left"
+                android:padding="@dimen/dim_rv_lower_padding"
+                android:src="@drawable/visited_no"
+                android:tint="@color/design_default_color_error"
+                tools:ignore="UseAppTint" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

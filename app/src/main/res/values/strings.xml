@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ListaClientes</string>
+    <string name="txv_name">placeholder_name</string>
+    <string name="txv_phone">placeholder_phone</string>
+    <string name="txv_email">placeholder_email</string>
+    <string name="txv_visited">Visitado</string>
+    <string name="txv_rv_title">Clientes</string>
+    <string name="alert_call_perm">La aplicación no puede realizar llamadas si no se le otorgan permisos para ello</string>
+</resources>
